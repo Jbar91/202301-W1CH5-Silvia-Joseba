@@ -9,18 +9,52 @@
   </head>
 
   <body>
-    <header>
-      <h1>Travelian</h1>
+    <header class="header">
+      <h1 class="header__title">Travelian</h1>
       <div></div>
     </header>
     <main>
-      <section class="first-seccion">
-        <section>
-          <div>Start your unforgettable journey with us.</div>
-          <div>The best travel for your journey begins now</div>
+      <section class="landing-page">
+        <section class="landing-page__info">
+          <p class="landing-page__info__title">
+            Start your unforgettable journey with us.
+          </p>
+          <p class="landing-page__info__subtitle">
+            The best travel for your journey begins now
+          </p>
         </section>
-        <section>
-          <form action=""></form>
+        <section class="landing-page__form">
+          <form action="">
+            <label class="landing-page__form__destination">
+              Destination
+              <input type="text" name="destination" placeholder="Dubai" />
+            </label>
+            <label class="landing-page__form__person"
+              >Person
+              <input type="number" placeholder="2" />
+            </label>
+            <label class="landing-page__form__check-in"
+              >Check in
+              <input
+                type="text"
+                name="check-in"
+                placeholder="Sun, 17th Sep 2023"
+              />
+            </label>
+            <label class="landing-page__form__checkout"
+              >Check out
+              <input
+                type="text"
+                name="check-out"
+                placeholder="Sun, 17th Oct 2023"
+              />
+            </label>
+            <input
+              type="submit"
+              value="Book now"
+              class="landing-page__form__submit"
+            />
+          </form>
         </section>
       </section>
       <section class="page2">
