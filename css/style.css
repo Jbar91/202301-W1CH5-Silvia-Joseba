@@ -122,10 +122,18 @@ body {
     font-family: "Rubik";
     color: #767e86;
   }
+  .popular-destinations___info {
+    color: #767e86;
+  }
   .popular-destinations__title {
     color: #172432;
     font-family: "Playfair Display";
     font-size: 40px;
+  }
+  .popular-destinations__subtitle {
+    color: #767e86;
+    font-family: "Rubik";
+    font-style: normal;
   }
   .popular-destinations__destinations {
     display: flex;
@@ -210,10 +218,42 @@ body {
     cursor: pointer;
   }
 }
+.special-offers__info {
+  color: #767e86;
+}
+
 .special-offers__title {
   color: #172432;
   font-family: "Playfair Display";
   font-size: 40px;
+}
+
+.special-offers__location-name {
+  font-family: "Mulish";
+  font-style: normal;
+  color: #767e86;
+}
+
+.special-offers__offer-text {
+  color: #172432;
+  font-family: "Rubik";
+  font-style: normal;
+}
+
+.special-offer__prices {
+  color: #767e86;
+  font-family: "Rubik";
+}
+
+.special-offer__price-color {
+  font-family: "Rubik";
+  font-size: 32px;
+  color: #ff7757;
+}
+
+.special-offer__offer-details {
+  font-family: "Rubik";
+  color: #ffffff;
 }
 
 .blog__title {
@@ -222,10 +262,42 @@ body {
   font-size: 40px;
 }
 
+.blog__subtitle {
+  color: #767e86;
+  font-family: "Rubik";
+}
+
+.blog__info {
+  color: #767e86;
+}
+
+.blog__info-paragraph {
+  color: #767e86;
+}
+
 .trip-planner__title {
   color: #172432;
   font-family: "Playfair Display";
   font-size: 40px;
+}
+
+.experiences__info-subtitle {
+  color: #767e86;
+}
+
+.experiences__traveler-commet {
+  color: #767e86;
+  font-family: "rubik";
+}
+
+.john {
+  color: #767e86;
+  font-family: "Playfair Display";
+}
+
+.accountant {
+  font-family: "Rubik";
+  color: #767e86;
 }
 
 /*# sourceMappingURL=style.css.map */

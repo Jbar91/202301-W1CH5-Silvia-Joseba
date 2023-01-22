@@ -153,11 +153,15 @@ body {
   .popular-destinations {
   }
   .popular-destinations___info {
+    color: #767e86;
   }
   .popular-destinations__title {
     @include form-title;
   }
   .popular-destinations__subtitle {
+    color: #767e86;
+    font-family: "Rubik";
+    font-style: normal;
   }
   .popular-destinations__destinations {
     display: flex;
@@ -251,6 +255,7 @@ body {
 .special-offer {
 }
 .special-offers__info {
+  color: #767e86;
 }
 .special-offers__title {
   @include form-title;
@@ -264,18 +269,32 @@ body {
 .special-offers__location {
 }
 .special-offers__location-name {
+  font-family: "Mulish";
+  font-style: normal;
+  color: #767e86;
 }
 .special-offers__stars {
 }
 .special-offers__offer-description {
 }
 .special-offers__offer-text {
+  color: #172432;
+  font-family: "Rubik";
+  font-style: normal;
 }
 .special-offer__prices {
+  color: #767e86;
+  font-family: "Rubik";
 }
-.special-offer__prices-color {
+.special-offer__price-color {
+  font-family: "Rubik";
+  font-size: 32px;
+  color: #ff7757;
 }
 .special-offer__offer-details {
+  font-family: "Rubik";
+
+  color: #ffffff;
 }
 .special-offer__arrows {
 }
@@ -284,14 +303,21 @@ body {
 .blog__title {
   @include form-title;
 }
+.blog__subtitle {
+  color: #767e86;
+  font-family: "Rubik";
+}
 .blog__img-container {
 }
 .blog__info {
+  color: #767e86;
 }
 .blog__info-title {
 }
 .blog__info-paragraph {
+  color: #767e86;
 }
+
 .blog__info-link {
 }
 .blog__info-btn {
@@ -342,14 +368,25 @@ body {
 .experiences__info-title {
 }
 .experiences__info-subtitle {
+  color: #767e86;
 }
 .experiences__traveler {
 }
 .experiences__traveler-commet {
+  color: #767e86;
+  font-family: "rubik";
 }
 .experiences__traveler-review {
 }
 .experiences__traveler-info {
+}
+.john {
+  color: #767e86;
+  font-family: "Playfair Display";
+}
+.accountant {
+  font-family: "Rubik";
+  color: #767e86;
 }
 .experiences__traveler-arrows {
 }
