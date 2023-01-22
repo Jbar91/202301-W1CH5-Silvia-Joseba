@@ -10,3 +10,55 @@ $secondary-color2: #61291c;
 * {
   box-sizing: border-box;
 }
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .header__title {
+    font-family: "Playfair Display", serif;
+    font-size: 4rem;
+    background-color: #331811;
+  }
+}
+.landing-page {
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+.landing-page__info__title {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 53px;
+
+  color: #ffffff;
+}
+.landing-page__info__subtitle {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+
+  color: #ffffff;
+}
+.landing-page__from {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 0px 0px 32px;
+  gap: 100px;
+}
+
+.landing-page__form__destination {
+}
+.landing-page__form__person {
+}
+.landing-page__form__check-in {
+}
+.landing-page__form__checkout {
+}
+.page2__destinations {
+}
