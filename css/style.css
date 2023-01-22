@@ -27,9 +27,10 @@
   .header .header__nav {
     display: none;
   }
-  .landing-page__info {
-    font-family: Playfair Display;
-    color: #ffffff;
+  .landing-page__title {
+    color: #172432;
+    font-family: "Playfair Display";
+    font-size: 40px;
   }
   .landing-page__form label {
     display: block;
@@ -58,6 +59,28 @@
     font-family: "Rubik";
     color: #767e86;
   }
+  .popular-destinations__title {
+    color: #172432;
+    font-family: "Playfair Display";
+    font-size: 40px;
+  }
+}
+.special-offers__title {
+  color: #172432;
+  font-family: "Playfair Display";
+  font-size: 40px;
+}
+
+.blog__title {
+  color: #172432;
+  font-family: "Playfair Display";
+  font-size: 40px;
+}
+
+.trip-planner__title {
+  color: #172432;
+  font-family: "Playfair Display";
+  font-size: 40px;
 }
 
 /*# sourceMappingURL=style.css.map */
