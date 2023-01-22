@@ -1,64 +1,108 @@
 // Fonts
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Rubik:wght@300;400;600&display=swap");
-
+@mixin form-label {
+  font-family: "Rubik";
+  color: $label-color;
+}
 // Colors
 $primary-color1: #ff7757;
 $primary-color2: #ffd2c7;
 $secondary-color1: #331811;
 $secondary-color2: #61291c;
+$label-color: #767e86;
 
 * {
   box-sizing: border-box;
 }
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  .header__title {
-    font-family: "Playfair Display", serif;
-    font-size: 4rem;
-    background-color: #331811;
+.landing-page__img {
+  background-image: url("../assets/landing-page.avif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+@media (max-width: 400px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .header__title {
+      height: 80px;
+      width: 200px;
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+    .header__nav {
+      display: none;
+    }
+    .header__list {
+    }
+    .header__list-item {
+    }
+    .header__img-container {
+    }
   }
-}
-.landing-page {
-  flex: none;
-  order: 1;
-  align-self: stretch;
-  flex-grow: 0;
-}
-.landing-page__info__title {
-  font-family: "Playfair Display";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 40px;
-  line-height: 53px;
+  .landing-page {
+  }
+  .landing-page__info {
+    font-family: Playfair Display;
+    color: #ffffff;
+  }
+  .landing-page__info__title {
+  }
+  .landing-page__info__subtitle {
+  }
+  .landing-page__form {
+    label {
+      display: block;
+      input {
+        display: block;
+      }
+    }
+    .landing-page__form-submit {
+      background: #ff7757;
+      border-radius: 0px 0px 16px 16px;
 
-  color: #ffffff;
-}
-.landing-page__info__subtitle {
-  font-family: "Rubik";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
+      color: #ffffff;
+    }
+  }
 
-  color: #ffffff;
-}
-.landing-page__from {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 0px 0px 0px 32px;
-  gap: 100px;
-}
+  .landing-page__form-destination {
+    @include form-label;
+  }
+  .landing-page__form-person {
+    @include form-label;
+  }
+  .landing-page__form-check-in {
+    @include form-label;
+  }
+  .landing-page__form-checkout {
+    @include form-label;
+  }
 
-.landing-page__form__destination {
-}
-.landing-page__form__person {
-}
-.landing-page__form__check-in {
-}
-.landing-page__form__checkout {
-}
-.page2__destinations {
+  .popular-destinations {
+  }
+  .popular-destinations___info {
+  }
+  .popular-destinations__title {
+  }
+  .popular-destinations__subtitle {
+  }
+  .popular-destinations__destinations {
+  }
+  .popular-destinations__img-container {
+  }
+  .popuplar-destinations__img-info {
+  }
+  .popuplar-destinations__img-title {
+  }
+  .popular-destinations__img-location {
+  }
+  .popular-destinations__arrows {
+  }
+  .popular-destinations__btns {
+  }
 }
