@@ -3,11 +3,16 @@
   box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+}
+
 .landing-page__img {
   background-image: url("../assets/landing-page.avif");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 100%;
+  padding: 1rem;
 }
 
 @media (max-width: 400px) {
@@ -15,10 +20,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 8rem;
   }
   .header .header__title {
-    height: 80px;
-    width: 200px;
+    height: 5rem;
+    width: 10rem;
   }
   .header .header__title img {
     height: 100%;
@@ -36,6 +42,11 @@
     color: #172432;
     font-family: "Playfair Display";
     font-size: 40px;
+    color: #ffffff;
+  }
+  .landing-page__subtitle {
+    font-family: "Rubik";
+    color: #ffffff;
   }
   .landing-page__form {
     display: flex;
@@ -43,6 +54,7 @@
     background-color: white;
     width: 94%;
     border-radius: 1rem;
+    margin-bottom: 3rem;
   }
   .landing-page__form form {
     width: 100%;
