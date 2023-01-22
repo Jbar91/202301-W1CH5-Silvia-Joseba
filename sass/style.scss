@@ -8,11 +8,19 @@
   font-family: "Playfair Display";
 }
 // Colors
+@mixin form-title {
+  color: $title-color;
+  font-family: "Playfair Display";
+  font-size: 40px;
+}
+
+//color
 $primary-color1: #ff7757;
 $primary-color2: #ffd2c7;
 $secondary-color1: #331811;
 $secondary-color2: #61291c;
 $label-color: #767e86;
+$title-color: #172432;
 
 * {
   box-sizing: border-box;
@@ -54,8 +62,11 @@ $label-color: #767e86;
     align-items: center;
   }
   .landing-page__info {
-    font-family: Playfair Display;
-    color: #ffffff;
+  }
+  .landing-page__title {
+    @include form-title;
+  }
+  .landing-page__subtitle {
   }
   .landing-page__info__title {
   }
@@ -138,6 +149,7 @@ $label-color: #767e86;
   .popular-destinations___info {
   }
   .popular-destinations__title {
+    @include form-title;
   }
   .popular-destinations__subtitle {
   }
@@ -155,4 +167,144 @@ $label-color: #767e86;
   }
   .popular-destinations__btns {
   }
+}
+
+.special-offer {
+}
+.special-offers__info {
+}
+.special-offers__title {
+  @include form-title;
+}
+.special-offers__subtitle {
+}
+.special-offers__description-container {
+}
+.special-offers__img-container {
+}
+.special-offers__location {
+}
+.special-offers__location-name {
+}
+.special-offers__stars {
+}
+.special-offers__offer-description {
+}
+.special-offers__offer-text {
+}
+.special-offer__prices {
+}
+.special-offer__prices-color {
+}
+.special-offer__offer-details {
+}
+.special-offer__arrows {
+}
+.blog {
+}
+.blog__title {
+  @include form-title;
+}
+.blog__img-container {
+}
+.blog__info {
+}
+.blog__info-title {
+}
+.blog__info-paragraph {
+}
+.blog__info-link {
+}
+.blog__info-btn {
+}
+.trip-planner {
+}
+.trip-planner__info {
+}
+.trip-planner__title {
+  @include form-title;
+}
+.trip-planner__paragraph {
+}
+.trip-planner__btn {
+}
+.trip-planner__plans {
+}
+.trip-planner__plan-info {
+}
+.trip-planner__plan-price {
+}
+.trip-planner__plan-title {
+}
+.trip-planner__plan-review {
+}
+.trip-planner__plan-days {
+}
+.trip-planner__plan-info {
+}
+.trip-planner__plan-title {
+}
+.trip-planner__plan-review {
+}
+.trip-planner__plan-days {
+}
+.trip-planner__plan-info {
+}
+.trip-planner__plan-price {
+}
+.trip-planner__plan-title {
+}
+.trip-planner__plan-days {
+}
+.experiences {
+}
+.experiences__info {
+}
+.experiences__info-title {
+}
+.experiences__info-subtitle {
+}
+.experiences__traveler {
+}
+.experiences__traveler-commet {
+}
+.experiences__traveler-review {
+}
+.experiences__traveler-info {
+}
+.experiences__traveler-arrows {
+}
+.newsletter {
+}
+.newsletter__title {
+}
+.newsletter__form {
+}
+.footer {
+}
+.footer__menu-title {
+}
+.footer__menu-nav {
+}
+.footer__menu-nav-list {
+}
+.footer__menu-nav-item {
+}
+.footer__info {
+}
+.footer__infortitle {
+}
+.footer__info-nav {
+}
+.footer__info-nav-list {
+}
+.footer__info-nav-item {
+}
+.footer__info-links {
+}
+.footer__social {
+}
+.footer__social-title {
+}
+.footer__social-logos {
 }
