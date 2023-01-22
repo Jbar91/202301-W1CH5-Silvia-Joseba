@@ -6,8 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="css/style.css" />
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-  <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
   <title>Travellian</title>
 </head>
 
@@ -15,7 +14,7 @@
   <div class="landing-page__img">
 
     <header class="header">
-      <h1 class="header__title"><img src="/assets/logo.svg" alt="Logo Travelian"></h1>
+      <h1 class="header__title"><img src="assets/logo.svg" alt="Logo Travelian"></h1>
 
       <nav class="header__nav">
         <ul class="header__list">
@@ -29,7 +28,7 @@
       </nav>
 
       <div class="header__img-container">
-        <img src="/assets/menu.svg" alt="" class="header__img" />
+        <img src="assets/menu.svg" alt="" class="header__img" />
       </div>
     </header>
     <main>
@@ -57,7 +56,11 @@
             <label class="landing-page__form-checkout">Check out
               <input type="text" name="check-out" placeholder="Sun, 17th Oct 2023" />
             </label>
-            <input type="submit" value="Book now" class="landing-page__form-submit" />
+            <div class="landing-page__form-submit">
+
+              <input type="submit" value="Book now" class="landing-page__form-submit-btn" />
+              <img src="assets/arrow-right-white.svg" alt="" class="landing-page__form-submit-arrow">
+            </div>
           </form>
         </section>
       </section>

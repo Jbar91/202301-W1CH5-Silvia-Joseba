@@ -27,20 +27,71 @@
   .header .header__nav {
     display: none;
   }
+  .landing-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .landing-page__info {
     font-family: Playfair Display;
     color: #ffffff;
   }
+  .landing-page__form {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    width: 94%;
+    border-radius: 1rem;
+  }
+  .landing-page__form form {
+    width: 100%;
+  }
   .landing-page__form label {
     display: block;
+    margin-block-start: 1rem;
+    width: 90%;
+    padding-left: 1rem;
   }
   .landing-page__form label input {
     display: block;
   }
+  .landing-page__form label input[type=text],
+  .landing-page__form label input[type=number] {
+    border: none;
+    border-bottom: 1px solid black;
+    margin-block-start: 0.7rem;
+    padding-bottom: 0.8rem;
+    width: 100%;
+    font-family: "Playfair Display";
+  }
   .landing-page__form .landing-page__form-submit {
     background: #ff7757;
-    border-radius: 0px 0px 16px 16px;
     color: #ffffff;
+    display: flex;
+    align-items: center;
+    margin-block-start: 3.5rem;
+    border-radius: 0 0 1rem 1rem;
+    border-color: transparent;
+    width: 100%;
+    height: 5rem;
+    font-family: "Playfair Display";
+    font-size: 2rem;
+    font-weight: 200;
+  }
+  .landing-page__form .landing-page__form-submit-btn {
+    background: #ff7757;
+    color: #ffffff;
+    border-radius: 0 0 1rem 1rem;
+    border-color: transparent;
+    width: 100%;
+    height: 5rem;
+    font-family: "Playfair Display";
+    font-size: 2rem;
+    font-weight: 200;
+  }
+  .landing-page__form .landing-page__form-submit-arrow {
+    width: 2rem;
+    margin-inline-end: 1.7rem;
   }
   .landing-page__form-destination {
     font-family: "Rubik";
