@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <title>Travellian</title>
-  </head>
 
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+  <title>Travellian</title>
+</head>
+
+<body>
+  <div class="landing-page__img">
+
     <header class="header">
-      <h1 class="header__title">Travelian</h1>
+      <h1 class="header__title"><img src="assets/logo.svg" alt="Logo Travelian"></h1>
 
       <nav class="header__nav">
         <ul class="header__list">
@@ -21,10 +24,11 @@
           <li class="header__list-item">Blog</li>
           <li class="header__list-item">Pricing</li>
         </ul>
+
       </nav>
 
       <div class="header__img-container">
-        <img src="" alt="" class="header__img" />
+        <img src="assets/menu.svg" alt="" class="header__img" />
       </div>
     </header>
     <main>
@@ -43,467 +47,437 @@
               Destination
               <input type="text" name="destination" placeholder="Dubai" />
             </label>
-            <label class="landing-page__form-person"
-              >Person
+            <label class="landing-page__form-person">Person
               <input type="number" placeholder="2" />
             </label>
-            <label class="landing-page__form-check-in"
-              >Check in
-              <input
-                type="text"
-                name="check-in"
-                placeholder="Sun, 17th Sep 2023"
-              />
+            <label class="landing-page__form-check-in">Check in
+              <input type="text" name="check-in" placeholder="Sun, 17th Sep 2023" />
             </label>
-            <label class="landing-page__form-checkout"
-              >Check out
-              <input
-                type="text"
-                name="check-out"
-                placeholder="Sun, 17th Oct 2023"
-              />
+            <label class="landing-page__form-checkout">Check out
+              <input type="text" name="check-out" placeholder="Sun, 17th Oct 2023" />
             </label>
-            <input
-              type="submit"
-              value="Book now"
-              class="landing-page__form-submit"
-            />
+            <div class="landing-page__form-submit">
+
+              <input type="submit" value="Book now" class="landing-page__form-submit-btn" />
+              <img src="assets/arrow-right-white.svg" alt="" class="landing-page__form-submit-arrow">
+            </div>
           </form>
         </section>
       </section>
-      <section class="popular-destinations">
-        <div class="popular-destinations__info">
-          <h2 class="popular-destinations__title">Popular Destinations</h2>
-          <p class="popular-destinations__subtitle">
-            Most popular destinations around the world,from historical places to
-            natural wonders.
+  </div>
+  <section class="popular-destinations">
+    <div class="popular-destinations__info">
+      <h2 class="popular-destinations__title">Popular Destinations</h2>
+      <p class="popular-destinations__subtitle">
+        Most popular destinations around the world,from historical places to
+        natural wonders.
+      </p>
+    </div>
+  </section>
+  <section class="popular-destinations__destinations">
+    <!-- berlin -->
+  <div class="popular-destinations__img-container-berlin">
+  <!--    <img src="assets/berlin.avif" alt="Imagen monumento de Berlin" class="popular-destinations__img" /> -->
+
+      <h3 class="popular-destinations__img-title-berlin">Monument of Berlin</h3>
+      <p class="popular-destinations__img-location-berlin">
+        <span ><img src="assets/location.svg" class="popular-destinations__location-logo" alt=""></span> Berlin, Germany</p>
+
+
+    </div>
+    <div class="popular-destinations__img-container-london">
+      <!--    <img src="assets/berlin.avif" alt="Imagen monumento de Berlin" class="popular-destinations__img" /> -->
+
+          <h3 class="popular-destinations__img-title-london">Millenium Bridge</h3>
+          <p class="popular-destinations__img-location-london">
+            <span ><img src="assets/location.svg" class="popular-destinations__location-logo" alt=""></span> London, United Kingdom</p>
+
+
+        </div>
+        <div class="popular-destinations__img-container-venice">
+          <!--    <img src="assets/berlin.avif" alt="Imagen monumento de Berlin" class="popular-destinations__img" /> -->
+
+              <h3 class="popular-destinations__img-title-venice">Rialto Bridge</h3>
+              <p class="popular-destinations__img-location-venice">
+                <span ><img src="assets/location.svg" class="popular-destinations__location-logo" alt=""></span> Venice, Italy</p>
+
+
+            </div>
+    <div class="popular-destinations__arrows">
+      <img src="assets/Slide-left 1.svg" alt="">
+      <img src="assets/Slide-right 1.svg" alt="">
+    </div>
+
+
+  </section>
+
+  <section class="special-offers">
+    <div class="special-offers__info">
+      <h2 class="special-offers__title">Special Offers</h2>
+      <p class="special-offers__subtitle">
+        Check out our special offer and discounts
+      </p>
+    </div>
+    <!-- Lisbon -->
+    <article>
+      <div class="special-offers__description-container">
+        <div class="special-offers__img-container">
+          <img src="/assets/lisbon.avif" alt="Imagen casas blancas de portugal" />
+        </div>
+
+        <div class="special-offers__location">
+          <h2 class="special-offers__location-name">Lisbon, Portugal</h2>
+          <img src="" alt="" class="special-offers__stars" />
+          <img src="" alt="" class="special-offers__stars" />
+          <img src="" alt="" class="special-offers__stars" />
+          <img src="" alt="" class="special-offers__stars" />
+          <img src="" alt="" class="special-offers__stars" />
+        </div>
+
+        <div class="special-offers__offer-description">
+          <p class="special-offers__offer-text">
+            5 nights and 4 days in 5 star hotel, breakfast and lunch
+            included. Very popular during the renaissance. Passage and going
+            through the cites of the world in classical literature.
           </p>
         </div>
-      </section>
-      <section class="popular-destinations__destinations">
-        <!-- berlin -->
-        <div class="popular-destinations__img-container">
-          <img
-            src=""
-            alt="Imagen monumento de Berlin"
-            class="popular-destinations__img"
-          />
-
-          <div class="popuplar-destinations__img-info">
-            <h3 class="popular-destinations__img-title"></h3>
-            <p class="popular-destinations__img-location"></p>
-          </div>
-          <div class="popular-destinations__arrows">
-            <img src="" alt="" class="popular-destinations__btns" />
-            <img src="" alt="" class="popular-destinations__btns" />
-          </div>
-        </div>
-        <!-- london -->
-        <div class="popular-destinations__img-container">
-          <img
-            src=""
-            alt="Imagen monumento de Berlin"
-            class="popular-destinations__img"
-          />
-
-          <div class="popuplar-destinations__img-info">
-            <h3 class="popular-destinations__img-title"></h3>
-            <p class="popular-destinations__img-location"></p>
-          </div>
-          <div class="popular-destinations__arrows">
-            <img src="" alt="" class="popular-destinations__btns" />
-            <img src="" alt="" class="popular-destinations__btns" />
-          </div>
-        </div>
-        <!-- venice -->
-        <div class="popular-destinations__img-container">
-          <img
-            src=""
-            alt="Imagen monumento de Berlin"
-            class="popular-destinations__img"
-          />
-
-          <div class="popuplar-destinations__img-info">
-            <h3 class="popular-destinations__img-title"></h3>
-            <p class="popular-destinations__img-location"></p>
-          </div>
-          <div class="popular-destinations__arrows">
-            <img src="" alt="" class="popular-destinations__btns" />
-            <img src="" alt="" class="popular-destinations__btns" />
-          </div>
-        </div>
-      </section>
-
-      <section class="special-offers">
-        <div class="special-offers__info">
-          <h2 class="special-offers__title">Special Offers</h2>
-          <p class="special-offers__subtitle">
-            Check out our special offer and discounts
-          </p>
-        </div>
-        <!-- Lisbon -->
-        <article>
-          <div class="special-offers__description-container">
-            <div class="special-offers__img-container">
-              <img src="image country" alt="Imagen casas blancas de portugal" />
-            </div>
-
-            <div class="special-offers__location">
-              <h2 class="special-offers__location-name">Lisbon, Portugal</h2>
-              <img src="" alt="" class="special-offers__stars" />
-              <img src="" alt="" class="special-offers__stars" />
-              <img src="" alt="" class="special-offers__stars" />
-              <img src="" alt="" class="special-offers__stars" />
-              <img src="" alt="" class="special-offers__stars" />
-            </div>
-
-            <div class="special-offers__offer-description">
-              <p class="special-offers__offer-text">
-                5 nights and 4 days in 5 star hotel, breakfast and lunch
-                included. Very popular during the renaissance. Passage and going
-                through the cites of the world in classical literature.
-              </p>
-            </div>
-            <div>
-              <p class="special-offer__prices">
-                From <span class="special-offer__price-color">€500</span>
-              </p>
-              <button class="special-offer__offer-details">Details</button>
-            </div>
-          </div>
-        </article>
-        <!-- Greece -->
-        <article>
-          <div class="special-offers__description-container">
-            <div class="special-offers__img-container">
-              <img src="image country" alt="Imagen casas blancas de portugal" />
-            </div>
-
-            <div class="special-offers__location">
-              <h2 class="special-offers__location-name">Lisbon, Portugal</h2>
-              <img src="" alt="" class="special-offers__stars" />
-              <img src="" alt="" class="special-offers__stars" />
-              <img src="" alt="" class="special-offers__stars" />
-              <img src="" alt="" class="special-offers__stars" />
-              <img src="" alt="" class="special-offers__stars" />
-            </div>
-
-            <div class="special-offers__offer-description">
-              <p class="special-offers__offer-text">
-                5 nights and 4 days in 5 star hotel, breakfast and lunch
-                included. Very popular during the renaissance. Passage and going
-                through the cites of the world in classical literature.
-              </p>
-            </div>
-            <div>
-              <p class="special-offer__prices">
-                From <span class="special-offer__price-color">€500</span>
-              </p>
-              <button class="special-offer__offer-details">Details</button>
-            </div>
-          </div>
-        </article>
-        <!-- Rome -->
-        <article>
-          <div class="special-offers__description-container">
-            <div class="special-offers__img-container">
-              <img src="image country" alt="Imagen casas blancas de portugal" />
-            </div>
-
-            <div class="special-offers__location">
-              <h2 class="special-offers__location-name">Lisbon, Portugal</h2>
-              <img src="" alt="" class="special-offers__stars" />
-              <img src="" alt="" class="special-offers__stars" />
-              <img src="" alt="" class="special-offers__stars" />
-              <img src="" alt="" class="special-offers__stars" />
-              <img src="" alt="" class="special-offers__stars" />
-            </div>
-
-            <div class="special-offers__offer-description">
-              <p class="special-offers__offer-text">
-                5 nights and 4 days in 5 star hotel, breakfast and lunch
-                included. Very popular during the renaissance. Passage and going
-                through the cites of the world in classical literature.
-              </p>
-            </div>
-            <div>
-              <p class="special-offer__prices">
-                From <span class="special-offer__price-color">€500</span>
-              </p>
-              <button class="special-offer__offer-details">Details</button>
-            </div>
-          </div>
-        </article>
         <div>
-          <button class="special-offer__arrows">
-            page2__button_rigth-left
-          </button>
+          <p class="special-offer__prices">
+            From <span class="special-offer__price-color">€500</span>
+          </p>
+          <button class="special-offer__offer-details">Details</button>
         </div>
-      </section>
+      </div>
+    </article>
+    <!-- Greece -->
+    <article>
+      <div class="special-offers__description-container">
+        <div class="special-offers__img-container">
+          <img src="/assets/athens.avif" alt="Coliseo de Athenas " />
+        </div>
 
-      <!-- blog -->
-      <section class="blog">
+        <div class="special-offers__location">
+          <h2 class="special-offers__location-name">Athenas, Greace</h2>
+          <img src="" alt="" class="special-offers__stars" />
+          <img src="" alt="" class="special-offers__stars" />
+          <img src="" alt="" class="special-offers__stars" />
+          <img src="" alt="" class="special-offers__stars" />
+          <img src="" alt="" class="special-offers__stars" />
+        </div>
+
+        <div class="special-offers__offer-description">
+          <p class="special-offers__offer-text">
+            5 nights and 4 days in 5 star hotel, breakfast and lunch
+            included. Very popular during the renaissance. Passage and going
+            through the cites of the world in classical literature.
+          </p>
+        </div>
         <div>
-          <h2 class="blog__title">Our Blog</h2>
-          <p class="blog__subtitle">
-            An insight the incredible experience in the world
+          <p class="special-offer__prices">
+            From <span class="special-offer__price-color">€500</span>
           </p>
+          <button class="special-offer__offer-details">Details</button>
         </div>
-        <article class="blog__container">
-          <div class="blog__img-container">
-            <img
-              src="page4__imagen-acantiltilado"
-              alt="Imagen de un acantilado"
-              class="blog__img"
-            />
-          </div>
-          <div class="blog__info">
-            <h2 class="blog__info-title">Beautiful Italy Let's travel</h2>
-            <p class="blog__info-paragraph">
-              But I must explain to you how all this mistaken idea of denouncing
-              pleasure and praising pain was born and I will give you a complete
-              account of the system and expound the actual teachings of the
-              great explorer of the truth, the master- builder of human
-              happiness. No one rejects, dislike, or avoids plasure itself,
-              because it is pleasure, but because those who do not know how to
-              pursue pleasure rationally encounter consequences that are
-              extremly painful. Nor again is there anyone who loves or pursues.
-            </p>
-            <a href="#" class="blog__info-link"
-              ><p>Read More</p>
-              <span class="blog__info-btn"><img src="" alt="" /></span
-            ></a>
-          </div>
-        </article>
-      </section>
+      </div>
+    </article>
+    <!-- Rome -->
+    <article>
+      <div class="special-offers__description-container">
+        <div class="special-offers__img-container">
+          <img src="/assets/rome.avif" alt="Rio de Roma" />
+        </div>
 
-      <section class="trip-planner">
-        <section class="trip-planner__info">
-          <h2 class="trip-planner__title">Trip Planners</h2>
-          <p class="trip-planner__paragraph">
-            20 years from now you will be more disappointed by the things that
-            you didn't do. Stop regretting and start travelling, start throwing
-            off the bowlines.
-          </p>
-          <button class="trip-planner__btn">View all trip plans</button>
-        </section>
-        <article class="trip-planner__plans">
-          <!-- Rome -->
-          <div class="trip-planner__plan-info">
-            <img src="Rome" alt="Coliseo de Roma" />
-            <div class="trip-planner__plan-price">
-              <p>Guided Tour</p>
-              <p>€99/Day</p>
-            </div>
-            <h2 class="trip-planner__plan-title">Rome City Tour</h2>
-            <div>
-              <div>
-                <img src="" alt="" class="trip-planner__plan-review" />
-                <img src="" alt="" class="trip-planner__plan-review" />
-                <img src="" alt="" class="trip-planner__plan-review" />
-                <img src="" alt="" class="trip-planner__plan-review" />
-                <img src="" alt="" class="trip-planner__plan-review" />
-              </div>
-              <p class="trip-planner__plan-days">7 Days tour</p>
-            </div>
-          </div>
-          <!-- Paris -->
-          <div class="trip-planner__plan-info">
-            <img src="Rome" alt="Coliseo de Roma" />
-            <div class="trip-planner__plan-price">
-              <p>Guided Tour</p>
-              <p>€99/Day</p>
-            </div>
-            <h2 class="trip-planner__plan-title">Rome City Tour</h2>
-            <div>
-              <div>
-                <img src="" alt="" class="trip-planner__plan-review" />
-                <img src="" alt="" class="trip-planner__plan-review" />
-                <img src="" alt="" class="trip-planner__plan-review" />
-                <img src="" alt="" class="trip-planner__plan-review" />
-                <img src="" alt="" class="trip-planner__plan-review" />
-              </div>
-              <p class="trip-planner__plan-days">7 Days tour</p>
-            </div>
-          </div>
-          <!-- Barcelona -->
-          <div class="trip-planner__plan-info">
-            <img src="Rome" alt="Coliseo de Roma" />
-            <div class="trip-planner__plan-price">
-              <p>Guided Tour</p>
-              <p>€99/Day</p>
-            </div>
-            <h2 class="trip-planner__plan-title">Rome City Tour</h2>
-            <div>
-              <div>
-                <img src="" alt="" class="trip-planner__plan-review" />
-                <img src="" alt="" class="trip-planner__plan-review" />
-                <img src="" alt="" class="trip-planner__plan-review" />
-                <img src="" alt="" class="trip-planner__plan-review" />
-                <img src="" alt="" class="trip-planner__plan-review" />
-              </div>
-              <p class="trip-planner__plan-days">7 Days tour</p>
-            </div>
-          </div>
-          <!-- Budapest -->
-          <div class="trip-planner__plan-info">
-            <img src="Rome" alt="Coliseo de Roma" />
-            <div class="trip-planner__plan-price">
-              <p>Guided Tour</p>
-              <p>€99/Day</p>
-            </div>
-            <h2 class="trip-planner__plan-title">Rome City Tour</h2>
-            <div>
-              <div>
-                <img src="" alt="" class="trip-planner__plan-review" />
-                <img src="" alt="" class="trip-planner__plan-review" />
-                <img src="" alt="" class="trip-planner__plan-review" />
-                <img src="" alt="" class="trip-planner__plan-review" />
-                <img src="" alt="" class="trip-planner__plan-review" />
-              </div>
-              <p class="trip-planner__plan-days">7 Days tour</p>
-            </div>
-          </div>
-        </article>
-      </section>
+        <div class="special-offers__location">
+          <h2 class="special-offers__location-name">Rome, Italy</h2>
+          <img src="/assets/star.svg" alt="" class="special-offers__stars" />
+          <img src="/assets/star.svg" alt="" class="special-offers__stars" />
+          <img src="/assets/star.svg" alt="" class="special-offers__stars" />
+          <img src="/assets/star.svg" alt="" class="special-offers__stars" />
+          <img src="/assets/star.svg" alt="" class="special-offers__stars" />
+        </div>
 
-      <section class="experiences">
-        <div class="experiences__info">
-          <h2 class="experiences__info-title">Travelers experience</h2>
-          <p class="experiences__info-subtitle">
-            Here some awesome feedback from our travelers
+        <div class="special-offers__offer-description">
+          <p class="special-offers__offer-text">
+            5 nights and 4 days in 5 star hotel, breakfast and lunch
+            included. Very popular during the renaissance. Passage and going
+            through the cites of the world in classical literature.
           </p>
         </div>
-        <div class="experiences__traveler">
-          <img src="" alt="" class="experiences__traveler-img" />
-          <p class="experiences__traveler-comment">
-            But I must explain to you how all this mistaken idea of denouncing
-            pleasure and praising pain was born and I will give you a complete
-            account of the system and expound the actual teachings of the great
-            explorer of the truth, the master- builder of human happiness.
+        <div>
+          <p class="special-offer__prices">
+            From <span class="special-offer__price-color">€500</span>
           </p>
-          <span class="experiences__traveler-review"> stars </span>
-          <div class="experiences__traveler-info">
-            <p>John Doe</p>
-            <p>Accountant</p>
-          </div>
-          <div class="experiences__traveler-arrows">
-            <!-- arrows -->
-            <img src="" alt="" />
-            <img src="" alt="" />
-          </div>
+          <button class="special-offer__offer-details">Details</button>
         </div>
-        <div class="experiences__info">
-          <h2 class="experiences__info-title">Travelers experience</h2>
-          <p class="experiences__info-subtitle">
-            Here some awesome feedback from our travelers
-          </p>
-        </div>
-        <div class="experiences__traveler">
-          <img src="" alt="" class="experiences__traveler-img" />
-          <p class="experiences__traveler-comment">
-            But I must explain to you how all this mistaken idea of denouncing
-            pleasure and praising pain was born and I will give you a complete
-            account of the system and expound the actual teachings of the great
-            explorer of the truth, the master- builder of human happiness.
-          </p>
-          <span class="experiences__traveler-review"> stars </span>
-          <div class="experiences__traveler-info">
-            <p>John Smith</p>
-            <p>Journalist, HWO News</p>
-          </div>
-          <div class="experiences__traveler-arrows">
-            <!-- arrows -->
-            <img src="" alt="" />
-            <img src="" alt="" />
-          </div>
-        </div>
-        <div class="experiences__info">
-          <h2 class="experiences__info-title">Travelers experience</h2>
-          <p class="experiences__info-subtitle">
-            Here some awesome feedback from our travelers
-          </p>
-        </div>
-        <div class="experiences__traveler">
-          <img src="" alt="" class="experiences__traveler-img" />
-          <p class="experiences__traveler-comment">
-            But I must explain to you how all this mistaken idea of denouncing
-            pleasure and praising pain was born and I will give you a complete
-            account of the system and expound the actual teachings of the great
-            explorer of the truth, the master- builder of human happiness.
-          </p>
-          <span class="experiences__traveler-review"> stars </span>
-          <div class="experiences__traveler-info">
-            <p>Tamara Bellis</p>
-            <p>Managing Director, JTH</p>
-          </div>
-          <div class="experiences__traveler-arrows">
-            <!-- arrows -->
-            <img src="" alt="" />
-            <img src="" alt="" />
-          </div>
-        </div>
-      </section>
+      </div>
+    </article>
+    <div>
+      <button class="special-offer__arrows">
+        page2__button_rigth-left
+      </button>
+    </div>
+  </section>
 
-      <section class="newsletter">
-        <h2 class="newsletter__title">Our newsletter</h2>
-        <form action="" class="newsletter__form">
-          <label class="newsletter__form-email">
-            Email
-            <input type="email" name="email-newsletter" />
-          </label>
-          <input class="newsletter__form-btn" type="submit" value="Subscribe" />
-        </form>
-      </section>
-    </main>
+  <!-- blog -->
+  <section class="blog">
+    <div>
+      <h2 class="blog__title">Our Blog</h2>
+      <p class="blog__subtitle">
+        An insight the incredible experience in the world
+      </p>
+    </div>
+    <article class="blog__container">
+      <div class="blog__img-container">
+        <img src="/assets/italy.avif" alt="Imagen de un acantilado" class="blog__img" />
+      </div>
+      <div class="blog__info">
+        <h2 class="blog__info-title">Beautiful Italy Let's travel</h2>
+        <p class="blog__info-paragraph">
+          But I must explain to you how all this mistaken idea of denouncing
+          pleasure and praising pain was born and I will give you a complete
+          account of the system and expound the actual teachings of the
+          great explorer of the truth, the master- builder of human
+          happiness. No one rejects, dislike, or avoids plasure itself,
+          because it is pleasure, but because those who do not know how to
+          pursue pleasure rationally encounter consequences that are
+          extremly painful. Nor again is there anyone who loves or pursues.
+        </p>
+        <a href="#" class="blog__info-link">
+          <p>Read More</p>
+          <span class="blog__info-btn"><img src="" alt="" /></span>
+        </a>
+      </div>
+    </article>
+  </section>
 
-    <footer class="footer">
-      <div class="footer__logo-container">
-        <img src="" alt="" class="footer__logo-container-logo" />
-        <address class="footer__logo-container-copyright">
-          <p>Copyright © Travellian 2020 All rights reserved</p>
-        </address>
-      </div>
-      <div class="footer__menu">
-        <h3 class="footer__menu-title">Menu</h3>
-        <nav class="footer__menu-nav">
-          <ul class="footer__menu-nav-list">
-            <li class="footer__menu-nav-item">Home</li>
-            <li class="footer__menu-nav-item">Explore</li>
-            <li class="footer__menu-nav-item">Travel</li>
-            <li class="footer__menu-nav-item">Blog</li>
-            <li class="footer__menu-nav-item">Pricing</li>
-          </ul>
-        </nav>
-      </div>
-      <div class="footer__info">
-        <h3 class="footer__infortitle">Information</h3>
-        <nav class="footer__info-nav">
-          <ul class="footer__info-nav-list">
-            <li class="footer__info-nav-item">Destinations</li>
-            <li class="footer__info-nav-item">Support</li>
-            <li class="footer__info-nav-item">Terms & Conditions</li>
-            <li class="footer__info-nav-item">Privacy</li>
-          </ul>
-        </nav>
-      </div>
-      <div class="footer__info">
-        <h3 class="footer__info-title">Contact Info</h3>
-        <address class="footer__info-links">
-          <a href="tel:+123 456 789">+123 456 789</a>
-          <a href="mailto:info@travellian.com">info@travellian.com</a>
-          <a href="">1245, New York, USA</a>
-        </address>
-      </div>
-      <div class="footer__social">
-        <h3 class="footer__social-title">Follow us on</h3>
-        <div class="footer__social-logos">
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
+  <section class="trip-planner">
+    <section class="trip-planner__info">
+      <h2 class="trip-planner__title">Trip Planners</h2>
+      <p class="trip-planner__paragraph">
+        20 years from now you will be more disappointed by the things that
+        you didn't do. Stop regretting and start travelling, start throwing
+        off the bowlines.
+      </p>
+      <button class="trip-planner__btn">View all trip plans</button>
+    </section>
+    <article class="trip-planner__plans">
+      <!-- Rome -->
+      <div class="trip-planner__plan-info">
+        <img src="/assets/rome.avif" alt="Coliseo de Roma" />
+        <div class="trip-planner__plan-price">
+          <p>Guided Tour</p>
+          <p>€99/Day</p>
+        </div>
+        <h2 class="trip-planner__plan-title">Rome City Tour</h2>
+        <div>
+          <div>
+            <img src="" alt="" class="trip-planner__plan-review" />
+            <img src="" alt="" class="trip-planner__plan-review" />
+            <img src="" alt="" class="trip-planner__plan-review" />
+            <img src="" alt="" class="trip-planner__plan-review" />
+            <img src="" alt="" class="trip-planner__plan-review" />
+          </div>
+          <p class="trip-planner__plan-days">7 Days tour</p>
         </div>
       </div>
-    </footer>
-  </body>
+      <!-- Paris -->
+      <div class="trip-planner__plan-info">
+        <img src="/assets/eiffel-tower.avif" alt="Torre Eiffel" />
+        <div class="trip-planner__plan-price">
+          <p>Guided Tour</p>
+          <p>€95/Day</p>
+        </div>
+        <h2 class="trip-planner__plan-title">Paris City Tour</h2>
+        <div>
+          <div>
+            <img src="" alt="" class="trip-planner__plan-review" />
+            <img src="" alt="" class="trip-planner__plan-review" />
+            <img src="" alt="" class="trip-planner__plan-review" />
+            <img src="" alt="" class="trip-planner__plan-review" />
+            <img src="" alt="" class="trip-planner__plan-review" />
+          </div>
+          <p class="trip-planner__plan-days">7 Days tour</p>
+        </div>
+      </div>
+      <!-- Barcelona -->
+      <div class="trip-planner__plan-info">
+        <img src="/assets/barcelona.avif" alt="Calle la Rambla de noche" />
+        <div class="trip-planner__plan-price">
+          <p>Guided Tour</p>
+          <p>€89/Day</p>
+        </div>
+        <h2 class="trip-planner__plan-title">Barcelona City Tour</h2>
+        <div>
+          <div>
+            <img src="/assets/star.svg" alt="Estrella de valoracion" class="trip-planner__plan-review" />
+            <img src="/assets/star.svg" alt="Estrella de valoracion" class="trip-planner__plan-review" />
+            <img src="/assets/star.svg" alt="Estrella de valoracion" class="trip-planner__plan-review" />
+            <img src="/assets/star.svg" alt="Estrella de valoracion" class="trip-planner__plan-review" />
+            <img src="/assets/star.svg" alt="Estrella de valoracion" class="trip-planner__plan-review" />
+          </div>
+          <p class="trip-planner__plan-days">7 Days tour</p>
+        </div>
+      </div>
+      <!-- Budapest -->
+      <div class="trip-planner__plan-info">
+        <img src="/assets/budapest.avif" alt="San Esteban de Budapest" />
+        <div class="trip-planner__plan-price">
+          <p>Guided Tour</p>
+          <p>€89/Day</p>
+        </div>
+        <h2 class="trip-planner__plan-title">Budapest City Tour</h2>
+        <div>
+          <div>
+            <img src="" alt="" class="trip-planner__plan-review" />
+            <img src="" alt="" class="trip-planner__plan-review" />
+            <img src="" alt="" class="trip-planner__plan-review" />
+            <img src="" alt="" class="trip-planner__plan-review" />
+            <img src="" alt="" class="trip-planner__plan-review" />
+          </div>
+          <p class="trip-planner__plan-days">7 Days tour</p>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <section class="experiences">
+    <div class="experiences__info">
+      <h2 class="experiences__info-title">Travelers experience</h2>
+      <p class="experiences__info-subtitle">
+        Here some awesome feedback from our travelers
+      </p>
+    </div>
+    <div class="experiences__traveler">
+      <img src="" alt="" class="experiences__traveler-img" />
+      <p class="experiences__traveler-comment">
+        But I must explain to you how all this mistaken idea of denouncing
+        pleasure and praising pain was born and I will give you a complete
+        account of the system and expound the actual teachings of the great
+        explorer of the truth, the master- builder of human happiness.
+      </p>
+      <span class="experiences__traveler-review"> stars </span>
+      <div class="experiences__traveler-info">
+        <p class="john">John Doe</p>
+        <p class="accountant">Accountant</p>
+      </div>
+      <div class="experiences__traveler-arrows">
+        <!-- arrows -->
+        <img src="" alt="" />
+        <img src="" alt="" />
+      </div>
+    </div>
+    <div class="experiences__info">
+      <h2 class="experiences__info-title">Travelers experience</h2>
+      <p class="experiences__info-subtitle">
+        Here some awesome feedback from our travelers
+      </p>
+    </div>
+    <div class="experiences__traveler">
+      <img src="" alt="" class="experiences__traveler-img" />
+      <p class="experiences__traveler-comment">
+        But I must explain to you how all this mistaken idea of denouncing
+        pleasure and praising pain was born and I will give you a complete
+        account of the system and expound the actual teachings of the great
+        explorer of the truth, the master- builder of human happiness.
+      </p>
+      <span class="experiences__traveler-review"> stars </span>
+      <div class="experiences__traveler-info">
+        <p>John Smith</p>
+        <p>Journalist, HWO News</p>
+      </div>
+      <div class="experiences__traveler-arrows">
+        <!-- arrows -->
+        <img src="" alt="" />
+        <img src="" alt="" />
+      </div>
+    </div>
+    <div class="experiences__info">
+      <h2 class="experiences__info-title">Travelers experience</h2>
+      <p class="experiences__info-subtitle">
+        Here some awesome feedback from our travelers
+      </p>
+    </div>
+    <div class="experiences__traveler">
+      <img src="" alt="" class="experiences__traveler-img" />
+      <p class="experiences__traveler-comment">
+        But I must explain to you how all this mistaken idea of denouncing
+        pleasure and praising pain was born and I will give you a complete
+        account of the system and expound the actual teachings of the great
+        explorer of the truth, the master- builder of human happiness.
+      </p>
+      <span class="experiences__traveler-review"> stars </span>
+      <div class="experiences__traveler-info">
+        <p>Tamara Bellis</p>
+        <p>Managing Director, JTH</p>
+      </div>
+      <div class="experiences__traveler-arrows">
+        <!-- arrows -->
+        <img src="" alt="" />
+        <img src="" alt="" />
+      </div>
+    </div>
+  </section>
+
+  <section class="newsletter">
+    <h2 class="newsletter__title">Our newsletter</h2>
+    <form action="" class="newsletter__form">
+      <label class="newsletter__form-email">
+        Email
+        <input type="email" name="email-newsletter" />
+      </label>
+      <input class="newsletter__form-btn" type="submit" value="Subscribe" />
+    </form>
+  </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__logo-container">
+      <img src="" alt="" class="footer__logo-container-logo" />
+      <address class="footer__logo-container-copyright">
+        <p>Copyright © Travellian 2020 All rights reserved</p>
+      </address>
+    </div>
+    <div class="footer__menu">
+      <h3 class="footer__menu-title">Menu</h3>
+      <nav class="footer__menu-nav">
+        <ul class="footer__menu-nav-list">
+          <li class="footer__menu-nav-item">Home</li>
+          <li class="footer__menu-nav-item">Explore</li>
+          <li class="footer__menu-nav-item">Travel</li>
+          <li class="footer__menu-nav-item">Blog</li>
+          <li class="footer__menu-nav-item">Pricing</li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer__info">
+      <h3 class="footer__infortitle">Information</h3>
+      <nav class="footer__info-nav">
+        <ul class="footer__info-nav-list">
+          <li class="footer__info-nav-item">Destinations</li>
+          <li class="footer__info-nav-item">Support</li>
+          <li class="footer__info-nav-item">Terms & Conditions</li>
+          <li class="footer__info-nav-item">Privacy</li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer__info">
+      <h3 class="footer__info-title">Contact Info</h3>
+      <address class="footer__info-links">
+        <a href="tel:+123 456 789">+123 456 789</a>
+        <a href="mailto:info@travellian.com">info@travellian.com</a>
+        <a href="">1245, New York, USA</a>
+      </address>
+    </div>
+    <div class="footer__social">
+      <h3 class="footer__social-title">Follow us on</h3>
+      <div class="footer__social-logos">
+        <img src="/assets/facebook.svg" alt="Enlace a facebook" />
+        <img src="/assets/pinterest.svg" alt="Enlace a pinterest" />
+        <img src="/assets/instagram.svg" alt="Enlace a Instragram" />
+        <img src="/assets/twitter.svg" alt="Enlace a twitter" />
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>

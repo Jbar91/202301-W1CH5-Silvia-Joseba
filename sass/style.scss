@@ -1,55 +1,426 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Rubik:wght@300;400;600&display=swap");
+@mixin form-label {
+  font-family: "Rubik";
+  color: $label-color;
+}
+@mixin input-text {
+  font-family: "Playfair Display";
+}
+// Colors
+@mixin form-title {
+  color: $title-color;
+  font-family: "Playfair Display";
+  font-size: 40px;
+}
+
+//color
+$primary-color1: #ff7757;
+$primary-color2: #ffd2c7;
+$secondary-color1: #331811;
+$secondary-color2: #61291c;
+$label-color: #767e86;
+$title-color: #172432;
+
 * {
   box-sizing: border-box;
 }
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  .header__title {
-    font-family: "Playfair Display", serif;
-    font-size: 4rem;
-    background-color: #331811;
+body {
+  margin: 0;
+}
+.landing-page__img {
+  background-image: url("../assets/landing-page.avif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  padding: 1rem;
+}
+
+@media (max-width: 400px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8rem;
+
+    .header__title {
+      height: 5rem;
+      width: 10rem;
+
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+    .header__nav {
+      display: none;
+    }
+    .header__list {
+    }
+    .header__list-item {
+    }
+    .header__img-container {
+    }
+  }
+  .landing-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .landing-page__info {
+  }
+  .landing-page__title {
+    @include form-title;
+    color: #ffffff;
+  }
+  .landing-page__subtitle {
+    font-family: "Rubik";
+    color: #ffffff;
+  }
+  .landing-page__form {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    width: 94%;
+    border-radius: 1rem;
+    margin-bottom: 3rem;
+    form {
+      width: 100%;
+    }
+    label {
+      display: block;
+      margin-block-start: 1rem;
+      width: 90%;
+      padding-left: 1rem;
+
+      input {
+        display: block;
+      }
+      input[type="text"],
+      input[type="number"] {
+        border: none;
+        border-bottom: 1px solid black;
+        margin-block-start: 0.7rem;
+        padding-bottom: 0.8rem;
+        width: 100%;
+        @include input-text;
+      }
+    }
+    .landing-page__form-submit {
+      background: #ff7757;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      margin-block-start: 3.5rem;
+      border-radius: 0 0 1rem 1rem;
+      border-color: transparent;
+      width: 100%;
+      height: 5rem;
+      @include input-text;
+      font-size: 2rem;
+      font-weight: 200;
+    }
+    .landing-page__form-submit-btn {
+      background: #ff7757;
+      color: #ffffff;
+      border-radius: 0 0 1rem 1rem;
+      border-color: transparent;
+      width: 100%;
+      height: 5rem;
+      @include input-text;
+      font-size: 2rem;
+      font-weight: 200;
+    }
+    .landing-page__form-submit-arrow {
+      width: 2rem;
+      margin-inline-end: 1.7rem;
+    }
+  }
+
+  .landing-page__form-destination {
+    @include form-label;
+  }
+  .landing-page__form-person {
+    @include form-label;
+  }
+  .landing-page__form-check-in {
+    @include form-label;
+  }
+  .landing-page__form-checkout {
+    @include form-label;
+  }
+
+  .popular-destinations {
+  }
+  .popular-destinations___info {
+    color: #767e86;
+  }
+  .popular-destinations__title {
+    @include form-title;
+  }
+  .popular-destinations__subtitle {
+    color: #767e86;
+    font-family: "Rubik";
+    font-style: normal;
+  }
+  .popular-destinations__destinations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+  }
+  .popular-destinations__img {
+    width: 80%;
+  }
+  .popular-destinations__img-container-berlin {
+    background: url("../assets/berlin.avif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+
+  .popular-destinations__img-title-berlin {
+    color: white;
+    margin-bottom: 0;
+    margin-left: 1rem;
+  }
+  .popular-destinations__img-location-berlin {
+    color: white;
+    margin-bottom: 0;
+    margin-left: 1rem;
+  }
+  .popular-destinations__img-container-london {
+    background: url("../assets/london.avif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    display: none;
+  }
+
+  .popular-destinations__img-title-london {
+    color: white;
+    margin-bottom: 0;
+    margin-left: 1rem;
+  }
+  .popular-destinations__img-location-london {
+    color: white;
+    margin-bottom: 0;
+    margin-left: 1rem;
+  }
+  .popular-destinations__img-container-venice {
+    background: url("../assets/venice.avif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 200px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    display: none;
+    justify-content: end;
+  }
+
+  .popular-destinations__img-title-venice {
+    color: white;
+    margin-bottom: 0;
+    margin-left: 1rem;
+  }
+  .popular-destinations__img-location-venice {
+    color: white;
+    margin-bottom: 0;
+    margin-left: 1rem;
+  }
+  .popular-destinations__location-logo {
+    height: 1rem;
+  }
+  .popular-destinations__arrows {
+    display: flex;
+    gap: 2rem;
+    img:hover {
+      cursor: pointer;
+    }
+  }
+  .popular-destinations__btns {
   }
 }
-.landing-page {
-  flex: none;
-  order: 1;
-  align-self: stretch;
-  flex-grow: 0;
-}
-.landing-page__info__title {
-  font-family: "Playfair Display";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 40px;
-  line-height: 53px;
 
-  color: #ffffff;
+.special-offer {
 }
-.landing-page__info__subtitle {
+.special-offers__info {
+  color: #767e86;
+}
+.special-offers__title {
+  @include form-title;
+}
+.special-offers__subtitle {
+}
+.special-offers__description-container {
+}
+.special-offers__img-container {
+}
+.special-offers__location {
+}
+.special-offers__location-name {
+  font-family: "Mulish";
+  font-style: normal;
+  color: #767e86;
+}
+.special-offers__stars {
+}
+.special-offers__offer-description {
+}
+.special-offers__offer-text {
+  color: #172432;
   font-family: "Rubik";
   font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
+}
+.special-offer__prices {
+  color: #767e86;
+  font-family: "Rubik";
+}
+.special-offer__price-color {
+  font-family: "Rubik";
+  font-size: 32px;
+  color: #ff7757;
+}
+.special-offer__offer-details {
+  font-family: "Rubik";
 
   color: #ffffff;
 }
-.landing-page__from {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 0px 0px 0px 32px;
-  gap: 100px;
+.special-offer__arrows {
+}
+.blog {
+}
+.blog__title {
+  @include form-title;
+}
+.blog__subtitle {
+  color: #767e86;
+  font-family: "Rubik";
+}
+.blog__img-container {
+}
+.blog__info {
+  color: #767e86;
+}
+.blog__info-title {
+}
+.blog__info-paragraph {
+  color: #767e86;
 }
 
-.landing-page__form__destination {
+.blog__info-link {
 }
-.landing-page__form__person {
+.blog__info-btn {
 }
-.landing-page__form__check-in {
+.trip-planner {
 }
-.landing-page__form__checkout {
+.trip-planner__info {
 }
-.page2__destinations {
+.trip-planner__title {
+  @include form-title;
+}
+.trip-planner__paragraph {
+}
+.trip-planner__btn {
+}
+.trip-planner__plans {
+}
+.trip-planner__plan-info {
+}
+.trip-planner__plan-price {
+}
+.trip-planner__plan-title {
+}
+.trip-planner__plan-review {
+}
+.trip-planner__plan-days {
+}
+.trip-planner__plan-info {
+}
+.trip-planner__plan-title {
+}
+.trip-planner__plan-review {
+}
+.trip-planner__plan-days {
+}
+.trip-planner__plan-info {
+}
+.trip-planner__plan-price {
+}
+.trip-planner__plan-title {
+}
+.trip-planner__plan-days {
+}
+.experiences {
+}
+.experiences__info {
+}
+.experiences__info-title {
+}
+.experiences__info-subtitle {
+  color: #767e86;
+}
+.experiences__traveler {
+}
+.experiences__traveler-commet {
+  color: #767e86;
+  font-family: "rubik";
+}
+.experiences__traveler-review {
+}
+.experiences__traveler-info {
+}
+.john {
+  color: #767e86;
+  font-family: "Playfair Display";
+}
+.accountant {
+  font-family: "Rubik";
+  color: #767e86;
+}
+.experiences__traveler-arrows {
+}
+.newsletter {
+}
+.newsletter__title {
+}
+.newsletter__form {
+}
+.footer {
+}
+.footer__menu-title {
+}
+.footer__menu-nav {
+}
+.footer__menu-nav-list {
+}
+.footer__menu-nav-item {
+}
+.footer__info {
+}
+.footer__infortitle {
+}
+.footer__info-nav {
+}
+.footer__info-nav-list {
+}
+.footer__info-nav-item {
+}
+.footer__info-links {
+}
+.footer__social {
+}
+.footer__social-title {
+}
+.footer__social-logos {
 }
