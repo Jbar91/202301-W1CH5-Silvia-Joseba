@@ -77,10 +77,6 @@ body {
     font-family: "Rubik";
     color: #ffffff;
   }
-  .landing-page__info__title {
-  }
-  .landing-page__info__subtitle {
-  }
   .landing-page__form {
     display: flex;
     justify-content: center;
@@ -164,16 +160,89 @@ body {
   .popular-destinations__subtitle {
   }
   .popular-destinations__destinations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
   }
-  .popular-destinations__img-container {
+  .popular-destinations__img {
+    width: 80%;
   }
-  .popuplar-destinations__img-info {
+  .popular-destinations__img-container-berlin {
+    background: url("../assets/berlin.avif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
   }
-  .popuplar-destinations__img-title {
+
+  .popular-destinations__img-title-berlin {
+    color: white;
+    margin-bottom: 0;
+    margin-left: 1rem;
   }
-  .popular-destinations__img-location {
+  .popular-destinations__img-location-berlin {
+    color: white;
+    margin-bottom: 0;
+    margin-left: 1rem;
+  }
+  .popular-destinations__img-container-london {
+    background: url("../assets/london.avif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    display: none;
+  }
+
+  .popular-destinations__img-title-london {
+    color: white;
+    margin-bottom: 0;
+    margin-left: 1rem;
+  }
+  .popular-destinations__img-location-london {
+    color: white;
+    margin-bottom: 0;
+    margin-left: 1rem;
+  }
+  .popular-destinations__img-container-venice {
+    background: url("../assets/venice.avif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 200px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    display: none;
+    justify-content: end;
+  }
+
+  .popular-destinations__img-title-venice {
+    color: white;
+    margin-bottom: 0;
+    margin-left: 1rem;
+  }
+  .popular-destinations__img-location-venice {
+    color: white;
+    margin-bottom: 0;
+    margin-left: 1rem;
+  }
+  .popular-destinations__location-logo {
+    height: 1rem;
   }
   .popular-destinations__arrows {
+    display: flex;
+    gap: 2rem;
+    img:hover {
+      cursor: pointer;
+    }
   }
   .popular-destinations__btns {
   }
