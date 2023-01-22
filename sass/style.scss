@@ -25,11 +25,15 @@ $title-color: #172432;
 * {
   box-sizing: border-box;
 }
+body {
+  margin: 0;
+}
 .landing-page__img {
   background-image: url("../assets/landing-page.avif");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 100%;
+  padding: 1rem;
 }
 
 @media (max-width: 400px) {
@@ -37,10 +41,12 @@ $title-color: #172432;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 8rem;
 
     .header__title {
-      height: 80px;
-      width: 200px;
+      height: 5rem;
+      width: 10rem;
+
       img {
         height: 100%;
         width: 100%;
@@ -65,8 +71,11 @@ $title-color: #172432;
   }
   .landing-page__title {
     @include form-title;
+    color: #ffffff;
   }
   .landing-page__subtitle {
+    font-family: "Rubik";
+    color: #ffffff;
   }
   .landing-page__info__title {
   }
@@ -78,6 +87,7 @@ $title-color: #172432;
     background-color: white;
     width: 94%;
     border-radius: 1rem;
+    margin-bottom: 3rem;
     form {
       width: 100%;
     }
